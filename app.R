@@ -347,7 +347,7 @@ server <- function(input, output) {
               text = element_text(size = 13)) + xlab("Method")
       
       psi <- ggarrange(psi.ate, psi.att, psi.atc, # + rremove("x.text"),
-                       labels = c("A", "B", "C"),
+                       labels = c("C", "D", "E"),
                        ncol = 1, nrow = 3)
       
       ### RR plot
@@ -373,7 +373,7 @@ server <- function(input, output) {
               text = element_text(size = 13)) + xlab("Method")
       
       or.rr <- ggarrange(psi.rr, psi.or, # + rremove("x.text"),
-                         labels = c("D", "E"),
+                         labels = c("F", "G"),
                          ncol = 1, nrow = 2)
       
       ggarrange(psi, or.rr, ncol = 2)
